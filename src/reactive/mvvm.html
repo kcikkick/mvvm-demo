@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style type="text/css">
-            
-        </style>
-    </head>
-    <body>
-        <div id="app">
-            <input type="text" v-model="name">
-            <span>{{name}}</div>
+
+<head>
+	<style type="text/css">
+
+
+	</style>
+</head>
+
+<body>
+	<div id="app">
+		<input type="text" v-model="name">
+		<span>{{name}}</div>
         </div>
     </body>
-    <script src="vue.js"></script>
+    <script src="Dep.js"></script>
+    <script src="Watcher.js"></script>
+    <script src="Observer.js"></script>
+    <script src="Compile.js"></script>
+    <script src="Vue.js"></script>
     <script>
          new Vue({
              el: 'app',
              data:{
-                 name: "hello"
+                 name: "hello",
              },
          });
     </script>
